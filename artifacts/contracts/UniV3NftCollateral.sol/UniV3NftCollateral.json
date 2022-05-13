@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "UniV3NftCollateral",
+  "sourceName": "contracts/UniV3NftCollateral.sol",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220d606cbe666c4ed51c0d71d63bc7306e7d6d2a521444f1c99179d8d88f03bd91264736f6c63430008000033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220d606cbe666c4ed51c0d71d63bc7306e7d6d2a521444f1c99179d8d88f03bd91264736f6c63430008000033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
