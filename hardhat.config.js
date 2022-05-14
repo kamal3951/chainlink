@@ -1,4 +1,4 @@
-require('@nomiclabs/hardhat-ethers');
+//require('@nomiclabs/hardhat-ethers');
 module.exports = {
   defaultNetwork: "rinkeby",
   networks: {
@@ -17,14 +17,5 @@ module.exports = {
         runs: 200
       }
     }
-  },
-  paths: {
-    sources: "./contracts",
-    tests: "./test",
-    cache: "./cache",
-    artifacts: "./artifacts"
-  },
-  mocha: {
-    timeout: 40000
   }
 }

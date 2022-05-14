@@ -1,0 +1,236 @@
+{
+  "id": "a4d8803189c580d1612e7c771288cf2f",
+  "_format": "hh-sol-build-info-1",
+  "solcVersion": "0.8.0",
+  "solcLongVersion": "0.8.0+commit.c7dfd78e",
+  "input": {
+    "language": "Solidity",
+    "sources": {
+      "contracts/UniV3NftCollateral.sol": {
+        "content": "//SPDX-License-Identifier:MIT\r\npragma solidity ^0.8.0;\r\n\r\ncontract UniV3NftCollateral {\r\n    struct lending {\r\n        address payable lender;\r\n        uint256 lendAmount;\r\n    }\r\n\r\n    struct borrowing {\r\n        string ERC721Asset;\r\n        uint256 borrowedAmount;\r\n    }\r\n}\r\n"
+      }
+    },
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.bytecode",
+            "evm.deployedBytecode",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  "output": {
+    "contracts": {
+      "contracts/UniV3NftCollateral.sol": {
+        "UniV3NftCollateral": {
+          "abi": [],
+          "evm": {
+            "bytecode": {
+              "generatedSources": [],
+              "linkReferences": {},
+              "object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220abfd56174675fd6c8468c76335e43021141f4c5ec194c23aab639ac9809346a764736f6c63430008000033",
+              "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xAB REVERT JUMP OR CHAINID PUSH22 0xFD6C8468C76335E43021141F4C5EC194C23AAB639AC9 DUP1 SWAP4 CHAINID 0xA7 PUSH5 0x736F6C6343 STOP ADDMOD STOP STOP CALLER ",
+              "sourceMap": "58:218:0:-:0;;;;;;;;;;;;;;;;;;;"
+            },
+            "deployedBytecode": {
+              "generatedSources": [],
+              "immutableReferences": {},
+              "linkReferences": {},
+              "object": "6080604052600080fdfea2646970667358221220abfd56174675fd6c8468c76335e43021141f4c5ec194c23aab639ac9809346a764736f6c63430008000033",
+              "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xAB REVERT JUMP OR CHAINID PUSH22 0xFD6C8468C76335E43021141F4C5EC194C23AAB639AC9 DUP1 SWAP4 CHAINID 0xA7 PUSH5 0x736F6C6343 STOP ADDMOD STOP STOP CALLER ",
+              "sourceMap": "58:218:0:-:0;;;;;"
+            },
+            "methodIdentifiers": {}
+          },
+          "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/UniV3NftCollateral.sol\":\"UniV3NftCollateral\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/UniV3NftCollateral.sol\":{\"keccak256\":\"0x1d9ea69c5b9e324b4a80451215f26c36fef544e3906cf76fd8041640d7e155de\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://67517159944636593d292cfb8c854b7f6faba1e914fb53bbdeb372b357c43b7c\",\"dweb:/ipfs/QmQmiKGQnpfUvz9SWeCDBE8JyY9Yp835kzM8nGLNk6vmeS\"]}},\"version\":1}"
+        }
+      }
+    },
+    "sources": {
+      "contracts/UniV3NftCollateral.sol": {
+        "ast": {
+          "absolutePath": "contracts/UniV3NftCollateral.sol",
+          "exportedSymbols": {
+            "UniV3NftCollateral": [
+              12
+            ]
+          },
+          "id": 13,
+          "license": "MIT",
+          "nodeType": "SourceUnit",
+          "nodes": [
+            {
+              "id": 1,
+              "literals": [
+                "solidity",
+                "^",
+                "0.8",
+                ".0"
+              ],
+              "nodeType": "PragmaDirective",
+              "src": "31:23:0"
+            },
+            {
+              "abstract": false,
+              "baseContracts": [],
+              "contractDependencies": [],
+              "contractKind": "contract",
+              "fullyImplemented": true,
+              "id": 12,
+              "linearizedBaseContracts": [
+                12
+              ],
+              "name": "UniV3NftCollateral",
+              "nodeType": "ContractDefinition",
+              "nodes": [
+                {
+                  "canonicalName": "UniV3NftCollateral.lending",
+                  "id": 6,
+                  "members": [
+                    {
+                      "constant": false,
+                      "id": 3,
+                      "mutability": "mutable",
+                      "name": "lender",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 6,
+                      "src": "119:22:0",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      },
+                      "typeName": {
+                        "id": 2,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "119:15:0",
+                        "stateMutability": "payable",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      },
+                      "visibility": "internal"
+                    },
+                    {
+                      "constant": false,
+                      "id": 5,
+                      "mutability": "mutable",
+                      "name": "lendAmount",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 6,
+                      "src": "152:18:0",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 4,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "152:7:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "name": "lending",
+                  "nodeType": "StructDefinition",
+                  "scope": 12,
+                  "src": "93:85:0",
+                  "visibility": "public"
+                },
+                {
+                  "canonicalName": "UniV3NftCollateral.borrowing",
+                  "id": 11,
+                  "members": [
+                    {
+                      "constant": false,
+                      "id": 8,
+                      "mutability": "mutable",
+                      "name": "ERC721Asset",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 11,
+                      "src": "214:18:0",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage_ptr",
+                        "typeString": "string"
+                      },
+                      "typeName": {
+                        "id": 7,
+                        "name": "string",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "214:6:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_string_storage_ptr",
+                          "typeString": "string"
+                        }
+                      },
+                      "visibility": "internal"
+                    },
+                    {
+                      "constant": false,
+                      "id": 10,
+                      "mutability": "mutable",
+                      "name": "borrowedAmount",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 11,
+                      "src": "243:22:0",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 9,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "243:7:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "name": "borrowing",
+                  "nodeType": "StructDefinition",
+                  "scope": 12,
+                  "src": "186:87:0",
+                  "visibility": "public"
+                }
+              ],
+              "scope": 13,
+              "src": "58:218:0"
+            }
+          ],
+          "src": "31:247:0"
+        },
+        "id": 0
+      }
+    }
+  }
+}
